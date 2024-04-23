@@ -1,29 +1,5 @@
-setTimeout(function(){
-    if (localStorage.getItem("autoCloak") == true) {
-        document.getElementById("autoCloak").value = "AutoCloak On"
-        document.getElementById("autoCloak").style.color = "blue"
-        if (window.location == window.parent.location) {
-            cloak()
-        }
-    } else {
-        document.getElementById("autoCloak").value = "AutoCloak Off"
-        document.getElementById("autoCloak").style.color = "red"
-    }
-},500)
-
 function replace(link) {
     location.replace(link)
-}
-
-function handleCloaker() {
-    if (localStorage.getItem("autoCloak") != true) {
-        localStorage.setItem("autoCloak", true)
-        alert("Enabled AutoCloaker. Press OK.")
-        cloak()
-    } else {
-        localStorage.setItem("autoCloak", false)
-        alert("Disabled AutoCloaker.")
-    }
 }
 
 function cloak() {
