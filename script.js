@@ -1,6 +1,12 @@
 if (localStorage.getItem("autoCloak") == true) {
-    cloak()
-    document.getElementById("autoCloak").checked = true
+    document.getElementById("autoCloak").value = "AutoCloak (On)"
+    document.getElementById("autoCloak").style.color = "blue"
+    if (window.location == window.parent.location) {
+        cloak()
+    }
+} else {
+    document.getElementById("autoCloak").value = "AutoCloak (Off)"
+    document.getElementById("autoCloak").style.color = "red"
 }
 
 function replace(link) {
@@ -8,8 +14,10 @@ function replace(link) {
 }
 
 function handleCloaker() {
-    if (document.getElementById("autoCloak").checked == true) {
+    if (localStorage.getItem("autoCloak") != true) {
         localStorage.setItem("autoCloak", true)
+        alert("Enabled AutoCloaker. Press OK.")
+        cloak()
     } else {
         localStorage.setItem("autoCloak", false)
     }
