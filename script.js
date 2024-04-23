@@ -3,7 +3,7 @@ function replace(link) {
 }
 
 function cloak() {
-    var url = window.origin
+    var url = window.location.href
     var win = window.open();
     win.document.body.style.margin = '0';
     win.document.body.style.height = '100vh';
