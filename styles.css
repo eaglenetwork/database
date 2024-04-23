@@ -27,6 +27,11 @@
   vertical-align: middle;
   white-space: nowrap;
   width: 40%;
+  margin-top: 20px;
+  margin-left: 20px;
+  align-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .button-19:after {
@@ -65,5 +70,6 @@
 
 body {
   background-image: url('Assets/wallpaper.png');
-  zoom: 175%
+  zoom: 1.75;
+  background-size: cover;
 }
