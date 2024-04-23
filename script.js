@@ -1,13 +1,15 @@
-if (localStorage.getItem("autoCloak") == true) {
-    document.getElementById("autoCloak").value = "AutoCloak (On)"
-    document.getElementById("autoCloak").style.color = "blue"
-    if (window.location == window.parent.location) {
-        cloak()
+setTimeout(function(){
+    if (localStorage.getItem("autoCloak") == true) {
+        document.getElementById("autoCloak").value = "AutoCloak On"
+        document.getElementById("autoCloak").style.color = "blue"
+        if (window.location == window.parent.location) {
+            cloak()
+        }
+    } else {
+        document.getElementById("autoCloak").value = "AutoCloak Off"
+        document.getElementById("autoCloak").style.color = "red"
     }
-} else {
-    document.getElementById("autoCloak").value = "AutoCloak (Off)"
-    document.getElementById("autoCloak").style.color = "red"
-}
+},200)
 
 function replace(link) {
     location.replace(link)
