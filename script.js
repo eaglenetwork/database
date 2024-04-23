@@ -1,5 +1,18 @@
+if (localStorage.getItem("autoCloak") == true) {
+    cloak()
+    document.getElementById("autoCloak").checked = true
+}
+
 function replace(link) {
     location.replace(link)
+}
+
+function handleCloaker() {
+    if (document.getElementById("autoCloak").checked == true) {
+        localStorage.setItem("autoCloak", true)
+    } else {
+        localStorage.setItem("autoCloak", false)
+    }
 }
 
 function cloak() {
@@ -14,4 +27,5 @@ function cloak() {
     iframe.style.margin = '0';
     iframe.src = url;
     win.document.body.appendChild(iframe);
+    location.replace("https://google.com")
 }
