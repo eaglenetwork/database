@@ -9,7 +9,7 @@ setTimeout(function(){
         document.getElementById("autoCloak").value = "AutoCloak Off"
         document.getElementById("autoCloak").style.color = "red"
     }
-},200)
+},500)
 
 function replace(link) {
     location.replace(link)
