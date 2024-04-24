@@ -1,5 +1,4 @@
 function replace(link) {
-    document.requestFullscreen()
     location.replace(link)
 }
 
