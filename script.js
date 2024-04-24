@@ -3,6 +3,12 @@ function replace(link) {
     location.replace(link)
 }
 
+function randomImage() {
+    let arr = ["Assets/wallpaper.png", "Assets/nova.png"]
+    choice = arr[(Math.floor(Math.random() * arr.length))]
+    document.getElementById("zebody").style.backgroundImage = choice
+}
+
 function cloak() {
     var url = "https://eaglenetwork.github.io/database"
     var win = window.open();
