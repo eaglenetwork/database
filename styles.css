@@ -31,7 +31,7 @@
 
 .button-19:after {
   background-clip: padding-box;
-  background-color: #0cca02;
+  background-color: #03c2f7;
   border: solid transparent;
   border-radius: 16px;
   border-width: 0 0 4px;
@@ -67,4 +67,11 @@ body {
   background-image: url('Assets/wallpaper.png');
   zoom: 1.75;
   background-size: cover;
+}
+
+.cooltext {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  font-style: italic;
+  color: rgb(233, 233, 233);
 }
