@@ -5,7 +5,7 @@ function replace(link) {
 function randomImage() {
     let arr = ["Assets/wallpaper.png", "Assets/nova.png"]
     choice = arr[(Math.floor(Math.random() * arr.length))]
-    document.getElementById("zebody").style.backgroundImage = choice
+    document.getElementById("zebody").style.backgroundImage = arr[choice]
 }
 
 function cloak() {
