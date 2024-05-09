@@ -1,4 +1,4 @@
-function replace(link, a) {
+function replace(link) {
     location.replace(link)
 }
 
