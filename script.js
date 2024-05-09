@@ -1,5 +1,5 @@
-function replace(link, cloak) {
-    if (cloak) {
+function replace(link, cloake) {
+    if (cloake) {
         cloak(link)
     } else {
         location.replace(link)
