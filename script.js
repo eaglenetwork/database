@@ -1,15 +1,12 @@
-function replace(link, cloake) {
-    if (cloake) {
-        cloak(link)
-    } else {
-        location.replace(link)
-    }
+function replace(link, a) {
+    location.replace(link)
 }
 
 function randomImage() {
     let arr = ["Assets/wallpaper.png", "Assets/nova.png"]
     choice = arr[(Math.floor(Math.random() * arr.length))]
-    document.body.style.backgroundImage = arr[choice]
+    alert(choice)
+    document.body.style.backgroundImage = choice
 }
 
 function cloak(url) {
