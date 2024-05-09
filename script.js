@@ -1,5 +1,9 @@
-function replace(link) {
-    location.replace(link)
+function replace(link, cloak) {
+    if (cloak) {
+        cloak(link)
+    } else {
+        location.replace(link)
+    }
 }
 
 function randomImage() {
@@ -8,8 +12,7 @@ function randomImage() {
     document.body.style.backgroundImage = arr[choice]
 }
 
-function cloak() {
-    var url = "https://eaglenetwork.github.io/database"
+function cloak(url) {
     var win = window.open();
     win.document.body.style.margin = '0';
     win.document.body.style.height = '100vh';
