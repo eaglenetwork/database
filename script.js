@@ -4,7 +4,7 @@ function replace(link) {
 
 function randomImage() {
     let arr = ["Assets/wallpaper.png", "Assets/nova.png"]
-    choice = arr[(Math.floor(Math.random() * arr.length))]
+    choice = arr[Math.floor(Math.random() * arr.length)]
     alert(choice)
     document.body.style.backgroundImage = choice
 }
